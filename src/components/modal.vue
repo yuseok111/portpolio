@@ -5,8 +5,9 @@
 </template>
 <script>
 	import { onMounted, ref } from 'vue';
-	import clone1 from '../assets/clone1.png';
-	import clone2 from '../assets/clone2.png';
+	import clone1 from '../assets/mokup_1.png';
+	import clone2 from '../assets/mokup_2.png';
+	import clone3 from '../assets/mokup_3.png';
 
 	export default {
 		name: 'modal',
@@ -32,11 +33,11 @@
 						break;
 
 					case 'market':
-						src.value = clone2;
+						src.value = clone3;
 						break;
 
 					case 'museum':
-						src.value = clone1;
+						src.value = clone2;
 						break;
 
 					case 'clone1':
@@ -72,8 +73,8 @@
 		z-index: 3;
 		cursor: pointer;
 		.modal-box {
-			width: 300px;
-			height: 300px;
+			width: 1000px;
+			height: 100%;
 			position: fixed;
 			top: 50%;
 			left: 50%;

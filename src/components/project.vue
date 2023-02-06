@@ -84,7 +84,7 @@
 					<ul>
 						<li>프로젝트기간: <span class="bold"> 2022 12월 ~ 2023 12.29월</span></li>
 						<li>프로젝트 인원 : <span class="bold">3인</span></li>
-						<li>프로젝트 배포링크: <span class="bold">GitHub</span></li>
+						<li>프로젝트 배포d링크: <span class="bold">GitHub</span></li>
 						<li>프로젝트설명</li>
 					</ul>
 					<div class="info_box">

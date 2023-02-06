@@ -1,21 +1,21 @@
 <template>
 	<section id="Intro" class="main">
-		<!-- <swiper
-      :direction="'vertical'"
-      :centeredSlides="true"
-      :autoplay="{
-        delay: 2500,
-        disableOnInteraction: false,
-        loop: true,
-        loopAdditionalSlides: 1,
-      }"
-      :modules="modules"
-      class="mySwiper"
-    >
-      <swiper-slide>성장 하고 싶은</swiper-slide>
-      <swiper-slide>소통 할수 있는</swiper-slide>
-      <swiper-slide>꾸준 하고 싶은</swiper-slide>
-    </swiper> -->
+		<swiper
+			:direction="'vertical'"
+			:centeredSlides="true"
+			:autoplay="{
+				delay: 2500,
+				disableOnInteraction: false,
+				loop: true,
+				loopAdditionalSlides: 1,
+			}"
+			:modules="modules"
+			class="mySwiper"
+		>
+			<swiper-slide>성장 하고 싶은</swiper-slide>
+			<swiper-slide>소통 할수 있는</swiper-slide>
+			<swiper-slide>꾸준 하고 싶은</swiper-slide>
+		</swiper>
 		<div class="text-box">
 			<h1 class="h1">개발자 <span>김유석</span>입니다 :)</h1>
 			<p class="sp">2023 PORTFOLIO</p>
@@ -35,7 +35,7 @@
 		},
 		setup() {
 			return {
-				// modules: [Autoplay, Pagination],
+				modules: [Autoplay, Pagination],
 			};
 		},
 	};
@@ -81,5 +81,36 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	@media screen and (max-width: 1440px) {
+		.swiper {
+			position: absolute;
+			width: 50%;
+			height: 10%;
+			top: 20%;
+			left: 6%;
+		}
+	}
+	@media screen and (max-width: 1024px) {
+		.swiper {
+			position: absolute;
+			width: 50%;
+			height: 10%;
+			top: 20%;
+			left: 8%;
+		}
+		.h1 {
+			color: #fff;
+			font-size: 60px;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 50px;
+			color: #fff;
+			/* Center slide text vertically */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	}
 </style>
